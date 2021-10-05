@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>  <!-- This fails, see opentelemetry trace log for failure -->
+    <!-- <TargetFramework>net5.0</TargetFramework> --> <!-- This works fine -->
+    <RootNamespace>opentelemetry_issue_repro</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="OpenTelemetry" Version="1.1.0" />
+    <PackageReference Include="OpenTelemetry.Exporter.OpenTelemetryProtocol" Version="1.1.0" />
+  </ItemGroup>
+
+</Project>
